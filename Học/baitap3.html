@@ -8,12 +8,39 @@
 </head>
 <body>
     <form>
-        <p>
-            
-            <h1>Sở thích của bạn</h1>
-        </p>
-        <table>
-
+        <table border="1">
+            <form>
+                <tr>
+                    <td colspan="3"><b>SỞ THÍCH CỦA BẠN</b></td>
+                </tr>
+                <tr>
+                    <td>Họ và tên</td>
+                    <td><input type="text" name="yourname" placeholder="yourname"></td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" placeholder="email"></td>
+                </tr>
+                <tr>
+                    <td>Sở thích</td>
+                    <td><input type="checkbox">Thể thao</td>
+                    <td><input type="checkbox">Âm nhạc</td>
+                    <td><input type="checkbox">Đọc sách</td>              
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td><input type="checkbox">Lướt web</td>
+                    <td><input type="checkbox">Chơi game</td>
+                    <td><input type="checkbox">Điện ảnh</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox">Du lịch</td>
+                </tr>
+                <tr>
+                    <td><button type="submit">Gửi thông tin</button></td>
+                    <td><button type="reset">Nhập lại</button></td>
+                </tr>
+            </form>
         </table>
     </form>
 </body>
