@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <script>
+        let a = parseInt(prompt('Điền 1 số nguyên dương'));
+        let b;
+        let number = a;
+        let result = 0;
+        while (number !=0){
+            b = number % 10 ;
+            number = Math.floor(number / 10);
+            result += b;
+        }
+        document.write('Tổng các chữ số' + ' ' + a + ' ' + 'là: ' + result);
+    </script> -->
+
+    <!-- <script>
+        let a = [1, 400, 600, 123123, 12312, 700];
+        let result = 0;
+        for (let i = 0; i < a.length; i ++) {
+            if (result <= a[i]); {
+                result = a[i];
+            }
+        }
+        document.write('So lon nhat trong mang la:' + result);
+    </script> -->
+
+    <p id='result'></p>
+    <script>
+        let number = prompt('nhap vao 1 so nguyen');
+        let a = number;
+        let digit, result = 0
+
+        while(number) {
+            digit = number % 10;
+            result = result + digit;
+            number = Math.floor(number / 10);
+        }
+        document.getElementById('result').innerHTML = a + '=> ' + result;
+    </script>
+</body>
+</html>
